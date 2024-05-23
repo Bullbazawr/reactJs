@@ -2,6 +2,9 @@ import Greeting from './components/Greetings'
 import './App.css'
 import CurrentTime from './components/CurrentTime'
 import EventCard from './components/EventCard'
+import Counterr from './components/Counterr'
+import TextInput from './components/TextInput'
+import AddTodoItem from './components/AddTodoItem'
 
 function App() {
   return (
@@ -20,6 +23,8 @@ function App() {
         myDate='24.01.2025'
         place='питер'
         />
+        <Counterr/>
+        <AddTodoItem/>
     </div>
   )
 }

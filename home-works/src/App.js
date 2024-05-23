@@ -1,5 +1,6 @@
 import './App.css'
-import Message from './components/Message';
+import Message from './components/FirstHomeWork/Message'
+import CommentList from './components/SecondHomeWork/CommentsList'
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <Message 
         message={'Wellcome'}
       />
+      <CommentList />
     </div>
   )
 }
