@@ -1,14 +1,29 @@
 import './App.css'
-import Message from './components/FirstHomeWork/Message'
-import CommentList from './components/SecondHomeWork/CommentsList'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import HomePage from './components/FourthHomeWork/HomePage'
+import AboutPage from './components/FourthHomeWork/AboutPage'
+
+
 
 function App() {
+  const pages = [
+    {
+      id: 1,
+      title: 'Home Page',
+    },
+    {
+      id: 2,
+      title: 'About Page',
+    }
+  ]
   return (
     <div className="App">
-      <Message 
-        message={'Wellcome'}
-      />
-      <CommentList />
+      <Router>
+        <Routes>
+          <Route path='/' element={<HomePage/>} />
+          <Route path='/about' element={<AboutPage pages={pages} />} />
+        </Routes>
+      </Router>
     </div>
   )
 }
